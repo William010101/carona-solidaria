@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+   
+    <title>Document</title>
+</head>
+<body>
+        <div class="container">
+            <h1>Cadastro</h1>
+
+            <form action="http://localhost:3003" method="POST" id="formulario">
+               
+                <div class="container__NomeSenha">
+                
+                   <div>
+                        <label for="name">Nome completo</label>
+                        <input type="text" name="Nome" id="name">
+                    </div>
+                    <div class="age">
+                        <label for="idade">Telefone</label>
+                        <input type="number" name="Telefone" id="idade" >
+                    </div>
+                </div>
+
+                <hr>
+                <label for="cep">Endereço</label>
+                <input type="text" name="endereco" id="cep">
+
+                <div>
+                    <label for="">Você é motorista</label><br>
+                    <input type="radio" name="motorista" value="sim"> Sim <br>
+                    <input type="radio" name="motorista" value="nao"> Não <br>
+
+                </div>
+                <hr>
+
+                <select name="cidade" >
+                    <option value="aririu">Aririu</option>
+                    <option value="belavista">Bela vista</option>
+                </select>
+
+
+                <button>Incluir</button>
+            </form>
+        </div>
+</body>
+</html>
